@@ -15,11 +15,32 @@ span.hobbies {
     color: yellow;
     font-weight: bold;
 }
+
+p.paragraph::first-letter {
+    float: left;
+        line-height: 85%;
+        width: .7em;
+        font-size: 300%;
+        font-family: georgia;
+}
+
 a {
-    color: red;
+    color: lightblue;
 }
 li {
     color:white
+}
+li > p > a {
+    text-decoration: none;
+}
+
+li > p > a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+ul.yellow > li{
+    color:yellow;
 }
 
 ul {
