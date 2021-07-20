@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(43, 42, 42);
+}
+
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p > img {
+    height: 200px;
+    width: 300px;
+}
+
+span.hobbies {
+    color: yellow;
+    font-weight: bold;
+}
+a {
+    color: red;
+}
+li {
+    color:white
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    padding: 0px;
+}
+
+h1,h3 {
+    color:#87ceeb
+    ;
+}
