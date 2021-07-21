@@ -7,6 +7,10 @@ body {
     background-image: url("../resources/silverware.jpg");
 }
 
+footer {
+    text-align: right;
+}
+
 .copyright {
     font-family: serif;
 }
@@ -39,7 +43,7 @@ p {
     font-family: Georgia, Garamond;
 }
 
-span.strike {
+span.linethrough {
     text-decoration: line-through;
 }
 
