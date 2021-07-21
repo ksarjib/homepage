@@ -1,4 +1,26 @@
 #profile_img img {
     height: 15%;
     width: 15%;
+    border-radius: 50%;
 }
+
+#profile_img {
+    padding-top: 20px;
+    padding-bottom:5px;
+    max-width: 100%;
+    text-align: center;
+    background: linear-gradient(black, grey);
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 300px;
+}
+
+li a:hover {
+    font-size: 20px;
+    background: #454a57;
+    color: white;
+  }

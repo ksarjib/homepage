@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(43, 42, 42);
+}
+
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p > img {
+    height: 200px;
+    width: 300px;
+}
+
+span.hobbies {
+    color: yellow;
+    font-weight: bold;
+}
+
+p.paragraph::first-letter {
+    float: left;
+        line-height: 85%;
+        width: .7em;
+        font-size: 300%;
+        font-family: georgia;
+}
+
+a {
+    color: lightblue;
+}
+li {
+    color:white
+}
+li > p > a {
+    text-decoration: none;
+}
+
+li > p > a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+ul.yellow > li{
+    color:yellow;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    padding: 0px;
+}
+
+h1,h3 {
+    color:#87ceeb
+    ;
+}
