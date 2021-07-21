@@ -7,10 +7,6 @@ body {
     background-image: url("../resources/silverware.jpg");
 }
 
-footer {
-    text-align: right;
-}
-
 .copyright {
     font-family: serif;
 }
