@@ -1,0 +1,135 @@
+#header-div {
+    background-image: url('../resources/bannerbg.png');
+    text-align: center;
+    height: 50px;
+}
+
+#container {
+    width : 800px;
+    border-radius: 20px;
+    border: 4px;
+    margin: auto;
+    border-color: gray;
+    border-style: solid;
+    overflow: hidden;
+}
+
+#left-section-header-image {
+    float: left;
+}
+
+.review{
+    background-color: #E8DC9B;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: gray;
+    padding: 8px;
+    text-align: left;
+
+}
+
+.review-container {
+    clear: both;
+    margin-bottom: 20pt;
+}
+
+#page-number {
+    clear: both;
+    text-align: center;
+    background-color: #A2B964;
+}
+
+
+.critic-icon {
+    float: left;
+    margin-right: 5px;
+}
+
+.quality-icon {
+    margin-right: 5px;
+    float: left;
+}
+
+.critic {
+    font-style: italic;
+    text-align: left;
+}
+
+#left-col-review, #right-col-review {
+    width : 47%;
+    float: left;
+    margin-left : 2%;
+    margin-top : 2%;
+}
+
+#left-section-header {
+    height: 83px;
+    background-image: url('../resources/rbg.png');
+}
+
+#rating {
+    float: left;
+    font-size: 48pt;
+    color: red;
+    font-size: bold;
+}
+
+
+
+#left-section-container {
+    width: 550px;
+    float: left;
+}
+
+#left-section-header {
+    width: 550px;
+}
+
+#right-section {
+    width : 250px;
+    background-color: #A2B964;
+    float: left;
+}
+
+ul > li {
+    list-style: none;
+}
+
+.right-content-component {
+    margin-bottom: 10pt;
+}
+
+.right-content {
+    padding-left: 10pt;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#page-number {
+    text-align: center;
+    height: 20px;
+    padding: 5px;
+}
+
+
+#validator {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+body {
+    background-image: url('../resources/background.png');
+    margin : auto;
+    box-sizing: border-box;
+    font-size: 8pt;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana;
+    text-shadow: 3px 3px #999999
+}
