@@ -1,0 +1,41 @@
+.header {
+    background-color: rgb(173,216,230);
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .menu-container {
+    color: white;
+    background-color: rgb(47,79,79);
+  }
+  
+  .col1 {
+    background-color:rgb(170,170,170);
+    height: 50vh;
+  }
+  .col2 {
+    background-color:  rgb(187,187,187);
+    height: 50vh;
+  }
+  .col3 {
+    background-color: rgb(204,204,204);
+    height: 50vh;
+  }
+  
+  .footer {
+    background-color: rgb(47,79,79);
+    color: white;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .column-container{
+     flex-wrap: wrap;
+    }
+    .col1, .col3{
+      width: 50%;
+    }
+    .col2 {
+      order: 1; width: 100%;
+    }
+  }
+  
