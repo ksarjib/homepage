@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>W1D5 Q1</title>
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: 120px 200px;
+            grid-gap: 5px;
+            max-width: 400px;;
+        }
+        .label {
+            padding-top: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset id="container">
+            <legend>Party Info</legend>
+            <div class="label">First Name:</div>
+            <div><input type="text" name="first" /></div>
+            <div class="label">Last Name:</div>
+            <div><input type="text" name="last" /></div>
+            <div class="label">Favorite Food:</div>
+            <div>
+                <select name="food">
+                    <option>Pizza</option>
+                    <option>Ice Cream</option>
+                    <option>Burger and Fries</option>
+                </select>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
