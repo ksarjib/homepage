@@ -18,6 +18,7 @@ window.onload = function () {
 }
 
 function recursive() {
+    console.log('Interval in the beginning ::' + interval);
     textArea.value = frameArray[i];
     if (++i >= l) {
         i = 0;
@@ -45,6 +46,8 @@ function stopAnimation(time) {
     startBtn.disabled = false;
     animationType.disabled = false;
     clearInterval(interval);
+    interval = null;
+    console.log('Logging interval while stopping ::' + interval);
     getAnimationAscii();
 }
 
@@ -66,7 +69,9 @@ function isturbo() {
     else {
         speed = 250;
     }
-    clearInterval(interval);
-    interval = setInterval(recursive, speed);
+    if(interval != null){
+        clearInterval(interval);
+        interval = setInterval(recursive, speed);
+    }
 }
 

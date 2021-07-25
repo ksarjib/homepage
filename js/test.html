@@ -6,34 +6,43 @@
             div {
                 font-weight: bold;
             }
-            .container{
-                display: grid; height: 40vh;
+            #container{
+                display: grid; 
+                grid-template-areas: 
+                'some text text'
+                'some here there';
+                height: 40vh;
             }
-            .container div:first-child{
-                grid-row: 1 /span 2;
-                grid-column: 1;
+            #some{
+                grid-area: some;
+                /* grid-row: 1 /span 2; */
+                /* grid-column: 1; */
                 background-color: #CCCCCC;
             }
-            .container div:nth-child(2){
-                grid-column: 2 /span 2;
-                grid-row: 1;
+
+            #text{
+                grid-area: text;
+                /* grid-column: 2 /span 2; */
+                /* grid-row: 1; */
                 background-color: #BBBBBB;
             }
-            .container div:nth-child(3){
+            #here{
+                grid-area: here;
                 background-color: #EEEEEE;
             }
-            .container div:last-child{
+            #there{
+                grid-area: there;
                 background-color: #CCCCCC;
             }
     
         </style>
     </head>
     <body>
-        <div class="container">
-            <div>Some</div>
-            <div>text</div>
-            <div>here</div>
-            <div>there</div>
+        <div id="container">
+            <div id="some">Some</div>
+            <div id="text">text</div>
+            <div id="here">here</div>
+            <div id="there">there</div>
         </div>
 
     </body>
