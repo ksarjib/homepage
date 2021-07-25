@@ -15,9 +15,10 @@ window.onload = function () {
     sizeOptions.onchange = changeSize;
     turbo.onchange = isturbo;
 
-}
+};
 
 function recursive() {
+    "use strict";
     console.log('Interval in the beginning ::' + interval);
     textArea.value = frameArray[i];
     if (++i >= l) {
@@ -26,6 +27,7 @@ function recursive() {
 }
 
 function startAnimation() {
+    "use strict";
     if(animationAscii){
         if(animationType.value != 'Blank') {
             stopBtn.disabled = false;
@@ -36,9 +38,10 @@ function startAnimation() {
         l = frameArray.length;
         interval = setInterval(recursive, speed);
     }
-};
+}
 
-function stopAnimation(time) {
+function stopAnimation() {
+    "use strict";
     if(animationAscii){
         textArea.value = animationAscii.split("=====\n")[0];
     }
@@ -53,16 +56,19 @@ function stopAnimation(time) {
 
 
 function getAnimationAscii() {
+    "use strict";
     var selectedAnimation = animationType.options[animationType.selectedIndex].value;
     animationAscii = ANIMATIONS[selectedAnimation];
 }
 
 function changeSize() {
+    "use strict";
     var fontsize = sizeOptions.options[sizeOptions.selectedIndex].value;
     textArea.style.fontSize = fontsize;
 }
 
 function isturbo() {
+    "use strict";
     if (turbo.checked) {
         speed = 50;
     }
