@@ -1,4 +1,5 @@
     
+import ANIMATIONS from './animations';
 var textArea, i=0, l, startBtn, frameArray, stopBtn, animationType, animationAscii, sizeOptions, speed = 250, turbo, interval;
 window.onload = function () {
     "use strict";
