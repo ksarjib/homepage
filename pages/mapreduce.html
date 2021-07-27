@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>W2D1 Assignment</title>
+        <meta charset="UTF-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+        <script src="../js/mapreducefilter.js"></script>
+        <script>
+            // initialize mocha
+            mocha.setup('bdd');
+            let assert = chai.assert;
+        </script>
+        <script>
+            describe("sum", function () {
+                it("takes 2 numbers, and returns the sum",
+                    function () {
+                        assert.equal(5, sum([2,3]));
+                    });
+            });
+            describe("multiply", function () {
+                it("takes 2 numbers, and returns the product",
+                    function () {
+                        assert.equal(6, multiply([2,3]));
+                    });
+            });
+            describe("longerThanN", function () {
+                it("takes an array of string and returns the string that has length greater than 7",
+                    function () {
+                        assert.deepEqual(['aeroplane','hippopotamus'], longerThanN(['asdf', 'aeroplane', 'ball', 'hippopotamus'], 7));
+                    });
+            });
+            describe("reverseString", function () {
+                it("reverse the given string",
+                    function () {
+                        assert.equal('dlroW olleH', reverseString('Hello World'));
+                    });
+            });
+    
+        </script>
+    </head>
+    <body>
+        <div id="mocha"></div>
+        <script>
+            mocha.run();
+        </script>
+    </body>
+</html>
