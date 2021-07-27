@@ -31,26 +31,26 @@
         <div id="form-container">
             <div id="container">
                 <form action="#">
-                <div class="form-element">
-                    <label>Email address</label><br>
-                    <input id="email" type="text" placeholder="Enter email">
-                    <div><span id="email-note">We'll never share your email with anyone else.</span></p></div>
-                </div>
-                <div class="form-element">
-                    <label>Password</label><br>
-                    <input id="password" type="password" placeholder="Password"
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{10,}" title="At least one number, one uppercase and lowercase letter">
-                </div>
-                <div class="form-element">
-                    <label>URL</label><br>
-                    <input id="url" type="text" placeholder="Enter URL"
-                    pattern="((http|https)://)" title="Please enter a valid url. A valid URL starts with http:// or https://">
-                </div>
-                <div class="form-element">
-                    <input id="checkbox" type="checkbox">
-                    <label for="checkbox">Check me out</label>
-                </div>
-                <div class="form-element"><button id="submit">Submit</button></div>
+                    <div class="form-element">
+                        <label>Email address</label><br>
+                        <input id="email" required="required" type="text" placeholder="Enter email">
+                        <div><span id="email-note">We'll never share your email with anyone else.</span></p></div>
+                    </div>
+                    <div class="form-element">
+                        <label>Password</label><br>
+                        <input id="password" required="required" type="password" placeholder="Password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{10,}" title="At least one number, one uppercase and lowercase letter">
+                    </div>
+                    <div class="form-element">
+                        <label>URL</label><br>
+                        <input id="url" type="text" placeholder="Enter URL"
+                        pattern="((http|https)://)" title="Please enter a valid url. A valid URL starts with http:// or https://">
+                    </div>
+                    <div class="form-element">
+                        <input id="checkbox" type="checkbox">
+                        <label for="checkbox">Check me out</label>
+                    </div>
+                    <div class="form-element"><button id="submit">Submit</button></div>
                 </form>
             </div>
         </div>
