@@ -1,6 +1,7 @@
 String.prototype.filter = function(remove) {
   let arr = this.split(' ');
-  return arr.filter(e => e !== remove);
+  return arr.filter(e => e !== remove)
+  .join(' ');
 }
 
 console.log('This is a nice sentence'.filter('nice'));
@@ -15,7 +16,7 @@ Array.prototype.bubbleSort = function() {
       }
     }
   }
-  console.log(this);
+  return this;
 };
 [9,8,7,6,5,4,3,2,1].bubbleSort();
 
