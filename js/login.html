@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <script>
+            window.onload = () => {
+                document.getElementById('re-form').onsubmit = () => {
+                    let password = document.getElementById("password").value;
+                    let patt = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!$@#])[a-zA-Z0-9!$@#]{10,}/;
+                    if(password.match(patt)){
+                        console.log('matched');
+                        return false; // return true if you want to submit the form
+                    }
+                    else{
+                        console.log('did not match');
+                        return false;
+                    }
+                };
+            };
+        </script>
+    </head>
+    <body>
+        <form action="" method="POST" id="re-form">
+            <input id="password" type="text">
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
+
