@@ -3,7 +3,7 @@ String.prototype.filter = function(remove) {
   return arr.filter(e => e !== remove);
 }
 
-console.log('This is a nice word'.filter('nice'));
+console.log('This is a nice sentence'.filter('nice'));
 
 Array.prototype.bubbleSort = function() {
   for(let i = 0; i < this.length - 1; i++) {
