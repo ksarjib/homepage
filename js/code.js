@@ -1,3 +1,4 @@
+"use strict";
 String.prototype.filter = function(remove) {
   let arr = this.split(' ');
   return arr.filter(e => e !== remove)
