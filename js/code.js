@@ -18,7 +18,6 @@ Array.prototype.bubbleSort = function() {
   }
   return this;
 };
-[9,8,7,6,5,4,3,2,1].bubbleSort();
 
 var Person = function() {};
 Person.prototype.initialize = function(name, age)
