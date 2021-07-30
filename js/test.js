@@ -2,7 +2,7 @@ describe("Prototype", () => {
   describe("Filter String", () => {
     it("should return 'It is a nice day!'", () => {
       assert.equal(
-        "It is a very nice day!".filter(['very']),
+        "It is a very nice day!".filter('very'),
         "It is a nice day!"
         
       );
