@@ -35,19 +35,19 @@
 
         describe("withdraw", function () {
             describe("When the given amount is more than the balance", function () {
-                it("Throws Error with Withdraw amount has to be greater than zero", function () {
+                it("Throws Error with message that the withdrawl amount has to be greater than zero", function () {
                     assert.throws(() => { account.withdraw(-1) }, Error, "Withdraw amount has to be greater than zero");
                 });
             });
 
             describe("When the given amount is less than or equal to 0", function () {
-                it("Throws Error with Insufficient funds", function () {
+                it("Throws Error with Insufficient fund message", function () {
                     assert.throws(() => { account.withdraw(200) }, Error, "Insufficient funds");
                 });
             });
 
             describe("When the given amount is valid", function () {
-                it("Decrease account balance by given amount", function () {
+                it("Increase balance on withdraw and decrease account balance after withdrawl", function () {
                     account.deposit(120);
                     account.withdraw(100);
                     assert.equal(account.getBalance(), 20);
@@ -56,7 +56,7 @@
         });
 
         describe("endOfMonth", function () {
-            it("Prints details of account", function () {
+            it("Prints account details at the end of the month", function () {
                 assert.equal(account.endOfMonth(), '');
             });
         });
@@ -81,7 +81,7 @@
         });
 
         describe("addInterest", function () {
-            it("deposits balance interest into account", function () {
+            it("deposits interest of that particular month into account", function () {
                 savingsAccount.deposit(100);
                 savingsAccount.addInterest();
                 assert.equal(savingsAccount.getBalance(), 100.1);
@@ -95,7 +95,7 @@
         });
 
         describe("endOfMonth", function () {
-            it("Prints details of savings account", function () {
+            it("Prints savings account details at the end of the month", function () {
                 savingsAccount.deposit(100);
                 savingsAccount.addInterest();
                 assert.equal(savingsAccount.endOfMonth(), 'Interest added SavingsAccount 1234: balance: 100.20009999999999 interest: 0.1');
@@ -115,14 +115,14 @@
         });
 
         describe("setOverdraftLimit", function () {
-            it("sets account overdraftLimit", function () {
+            it("sets account overdraft limit", function () {
                 checkingAccount.setOverdraftLimit(500);
                 assert.equal(checkingAccount.getOverdraftLimit(), 500);
             });
         });
 
         describe("getOverdraftLimit", function () {
-            it("Returns account overdraftLimit", function () {
+            it("Returns account overdraft limit", function () {
                 assert.equal(checkingAccount.getOverdraftLimit(), 1000);
             });
         });
@@ -183,13 +183,13 @@
         });
 
         describe("addCheckingAccount", function () {
-            it("adds a checking account, and returns number of accounts", function () {
+            it("adds a checking account, and returns number of accounts added till now", function () {
                 assert.equal(bank.addCheckingAccount(1000, 111), 1);
             });
         });
 
         describe("addSavingsAccount", function () {
-            it("adds a savings account, and returns number of accounts", function () {
+            it("adds a savings account, and returns number of accounts added till now", function () {
                 assert.equal(bank.addSavingsAccount(0.02, 222), 1);
             });
         });
