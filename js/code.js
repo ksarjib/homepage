@@ -21,7 +21,7 @@ Array.prototype.bubbleSort = function() {
 };
 
 var Person = function() {};
-Person.prototype.initialize = function(name, age)
+Person.prototype.initialize = function(name)
 {
  this.name = name;
 }
