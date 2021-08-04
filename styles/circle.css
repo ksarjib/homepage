@@ -1,0 +1,28 @@
+.circle {
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    position: absolute;
+}
+.circle:hover {
+    opacity: 0.7;
+}
+#circle-container {
+    position:absolute;
+    left: 0;
+    right: 0;
+    top:  0;
+    bottom: 0;
+}
+#control{
+    bottom: 20px;
+    left: 20px;
+    /* border: 1px solid black; */
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+form * {
+    margin-bottom: 5px;
+}
