@@ -1,8 +1,21 @@
 "use strict";
 
 $(document).ready(function(){
-        var timer;
-        const addition = parseInt($("#growth").val());
+    var timer;
+    const addition = parseInt($("#growth").val());
+
+    //   $('div').hover(
+    //     function(){
+    //         console.log('Hover in');
+    //         $(this).animate({opacity: 0.25}, 200, function() { }); 
+    //        } ///gets called when hover in
+    //   ,
+    //    function(){
+    //        console.log('hover out');
+    //          $(this).animate({opacity: 1}, 200, function() {}); 
+
+    //     }//gets called when hover out
+    //   );
     
       $("form").submit(function(e){
         e.preventDefault();
@@ -24,7 +37,15 @@ $(document).ready(function(){
                 },
                 "click": function() {
                     this.remove();
-                }
+                },
+                "hover": function(){
+                    console.log('Hover in');
+                    $(this).animate({opacity: 0.01}, 1000, function() { }); 
+                   }, ///gets called when hover in
+                "mouseleave": function(){
+                    console.log('hover out');
+                      $(this).animate({opacity: 1}, 0); 
+                 }//gets called when hover out
             }));
         }
         increaseCircle();
