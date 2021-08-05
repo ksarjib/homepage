@@ -10,7 +10,7 @@ $(document).ready(function(){
     let mm = 0;
     let ss = 0;
     let timer;
-    function resetTime() {
+    function reset() {
         clearInterval(timer);
         hh = 0;
         mm = 0;
@@ -36,17 +36,18 @@ $(document).ready(function(){
         console.log('I am here');
         if(started){
             $(".boundary").addClass('youlose');
-            resetTime();
+            reset();
             $("#status").html('Sorry! :( You loose. Click S to start the game again.');
         }
     });
     maze.mouseleave(function(){
         if(started) {
             boundry.addClass('youlose');
-            resetTime();
+            reset();
         }
     });
     start.click(function(){
+        $("#status").html('The game has started.');
         displayTime();
         if(boundry.hasClass('youlose'))
             boundry.removeClass('youlose');
@@ -55,7 +56,7 @@ $(document).ready(function(){
     });
     end.mouseenter(function(){
         $("#status").html('Contratulations! You win. Click S to start the game again.');
-        clearInterval(timer);
+        reset();
         started = false;
     });
 });
