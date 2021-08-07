@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
     }
     let age = req.query.age;
     if (!age) {
-        age = "50";
+        age = undefined;
     }
     res.send(`Welcome ${name}, Age ${age}`);
 });
