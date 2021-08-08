@@ -1,0 +1,24 @@
+#prod-container{
+    border: 1px solid black;
+    padding: 10px;
+    width: 400px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#prod-img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+#cart-img {
+    height: 100px;
+    width: 100px;
+}
+
+#title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold ;
+}

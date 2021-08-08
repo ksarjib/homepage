@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 });
 
 app.post('/result', (req, res) => {
-    res.redirect(url.format({
+    res.redirect(303, url.format({
         pathname: "/output",
         query: req.body
     }));

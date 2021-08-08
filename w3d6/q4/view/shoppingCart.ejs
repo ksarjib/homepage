@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+
+<body>
+    <div id="cart-container">
+        <p id="title">
+            <img id="cart-img" src="public/images/kart.png" alt="cart-image">
+            <span>Cart Items</span>
+        </p>
+        <form>
+            <% for(let i=0; i < cartItems.length; i++){ %>
+                <div id="prod-container">
+                    <image id="prod-img" src="/public/images/smartwatch.jfif" alt="product-image"></image>
+                    <h3>
+                        <%= cartItems[i].name %>
+                    </h3>
+                    <h4>Description: <%= cartItems[i].description %>
+                    </h4>
+                    <h4>Price: <%= cartItems[i].price %>
+                    </h4>
+                    <button type="submit">Buy</button><br>&nbsp;&nbsp;
+                </div>
+                <% } %>
+        </form>
+    </div>
+</body>
+
+</html>
