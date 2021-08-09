@@ -14,8 +14,8 @@ let products = [{id: 1, name: 'Product1', price: 100, description: desc},
                 {id: 3, name: 'Product3', price: 300, description: desc},
                 {id: 4, name: 'Product4', price: 400, description: desc}];
 
-let cartItems = [{id: 1, name: 'Product1', price: 100, description: desc},
-                {id: 4, name: 'Product4', price: 400, description: desc}];
+let cartItems = [{id: 1, name: 'Product1', price: 100, description: desc, quantity:2},
+                {id: 4, name: 'Product4', price: 400, description: desc, quantity:1}];
 
 app.get('/products', (req, res) => {
     res.render('products', {products : products});
