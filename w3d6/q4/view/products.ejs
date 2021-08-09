@@ -8,26 +8,28 @@
 </head>
 
 <body>
+    <%- include('header') %>
     <div>
         <p id="title">
             <span>Available Products</span>
         </p>
-    <form>
         <% for(let i=0; i < products.length; i++){ %>
             <div id="prod-container">
                 <image id="prod-img" src="/public/images/smartwatch.jfif" alt="product-image"></image>
-                <h3>
+                <span id="title">
                     <%= products[i].name %>
-                </h3>
-                <h4>Description: <%= products[i].description %>
-                </h4>
+                </span>
+                <p>Description: <%= products[i].description %></p>
                 <h4>Price: <%= products[i].price %>
                 </h4>
-                <button type="submit">Add to cart</button><br>&nbsp;&nbsp;
+                <form action="/addToCart" method="POST">
+                    <input name="id" type="hidden" value="<%= products[i].id %>"></input>
+                    <button type="submit">Add to cart</button><br>&nbsp;&nbsp;
+                </form>
             </div>
-            <% } %>
-        </form>
+        <% } %>
     </div>
+    <%- include('footer') %>
     
 </body>
 
