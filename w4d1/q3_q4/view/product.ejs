@@ -12,15 +12,16 @@
     <p id="title">
         <span>Product Detail</span>
     </p>
-    <form action="/addToCart" method="POST">
         <div id="prod-container">
             <image id="prod-img" src="/public/images/smartwatch.jfif" alt="product-image"></image>
             <h3><%= name %></h3>
             <h4>Description: <%= description %></h4>
             <h4>Price: <%= price %></h4>
-            <button type="submit">Add to cart</button><br>&nbsp;&nbsp;
+            <form action="/addToCart" method="POST">
+                <input name="id" type="hidden" value="<%= id %>"></input>
+                <button type="submit">Add to cart</button><br>&nbsp;&nbsp;
+            </form>
         </div>
-    </form>
     <%- include('footer') %>
 </body>
 
