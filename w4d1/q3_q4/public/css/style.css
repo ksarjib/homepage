@@ -1,0 +1,49 @@
+#prod-container{
+    border: 1px solid black;
+    padding: 10px;
+    width: 700px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#prod-img {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+#cart-img {
+    height: 100px;
+    width: 100px;
+}
+
+#title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold ;
+}
+
+footer {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: #333333;
+}
+
+p.copyright {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    line-height: 20px;
+    font-size: 0.9em;
+    text-align: center;
+    bottom:0;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 20px;
+  }
