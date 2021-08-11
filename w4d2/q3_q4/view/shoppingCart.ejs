@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+
+<body>
+    <%- include('header') %>
+    <div id="cart-container">
+        <p id="title">
+            <img id="cart-img" src="public/images/kart.png" alt="cart-image">
+            <span>Cart Items</span><span><%= total %></span>
+        </p>
+        <% for(let key in cartItems){ %>
+            <form>
+                <div id="prod-container">
+                    <image id="prod-img" src="/public/images/smartwatch.jfif" alt="product-image"></image>
+                    <h3>
+                        <%= cartItems[key].name %>
+                    </h3>
+                    <p>Description: <%= cartItems[key].description %>
+                    </p>
+                    <h4>Price: <%= cartItems[key].price %>
+                    <h4>Quantity: <%= cartItems[key].quantity %>
+                    </h4>
+                    <button type="submit">Buy</button><br>&nbsp;&nbsp;
+                </div>
+            </form>
+        <% } %>
+    </div>
+    <%- include('footer') %>
+</body>
+
+</html>

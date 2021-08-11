@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Product Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="/public/js/script.js"></script>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<body>
+    <%- include('header') %>
+    <div id="main-container">
+    <div id="container">
+        <p id="title">
+            <span>Available Products</span>
+        </p>
+        <a href="/cart">
+            <div id="product-cart">
+                <image id="prod-img" src="/public/images/kart.png" alt="product-image"></image>
+                Items in cart: <span id="cart"><%= total %></>
+            </div>
+        </a>
+        <% for(let i=0; i < products.length; i++){ %>
+            <div id="prod-container">
+                <image id="prod-img" src="/public/images/smartwatch.jfif" alt="product-image"></image>
+                <span id="title">
+                    <%= products[i].name %>
+                </span>
+                <p>Description: <%= products[i].description %></p>
+                <h4>Price: <%= products[i].price %>
+                </h4>
+                <form class="addToCart">
+                    <input name="id" type="hidden" value="<%= products[i].id %>"></input>
+                    <button type="submit">Add to cart</button><br>&nbsp;&nbsp;
+                </form>
+            </div>
+        <% } %>
+    </div>
+    </div>
+    <%- include('footer') %>
+</body>
+
+</html>
